@@ -1,0 +1,66 @@
+{
+    "angle": "90",
+    "folder": "results/angle_90/slots_2/all",
+    "start": "2020-03-16 16:07:30.260542",
+    "columns_images": [
+        "plantURI",
+        "dayOfYear",
+        "convex_hull_area",
+        "convex_hull_perimeter",
+        "height",
+        "height_over_pot",
+        "height_under_pot",
+        "number_of_objects",
+        "object_sum_area",
+        "width"
+    ],
+    "slots": {
+        "until": 30,
+        "split": 15
+    },
+    "step_wise_naive": "{'2_avg(object_sum_area)', 'biomass'}=0.7124410090961352\n{'2_avg(width)', 'biomass'}=0.2998728213925352\n{'1_avg(height_over_pot)', 'biomass'}=0.20643169168287237",
+    "sceneries": [
+        {
+            "scenery": [
+                "1_avg(convex_hull_area)",
+                "1_avg(object_sum_area)",
+                "1_avg(width)",
+                "1_avg(height_over_pot)",
+                "2_avg(convex_hull_area)",
+                "2_avg(object_sum_area)",
+                "2_avg(width)",
+                "2_avg(height_over_pot)",
+                "Treatment",
+                "label",
+                "label_log"
+            ],
+            "models_info": {
+                "baseline": {
+                    "start": "2020-03-16 16:12:28.968616",
+                    "r2_training": 0.0,
+                    "rmse_training": 128.84680213686798,
+                    "r2_test": -0.0009234924444936343,
+                    "rmse_test": 129.8137294732691,
+                    "end": "2020-03-16 16:14:58.004162"
+                },
+                "lr": {
+                    "start": "2020-03-16 16:14:58.004162",
+                    "r2_training": 0.6414777414023449,
+                    "rmse_training": 77.1492495748693,
+                    "r2_test": 0.6883823321583453,
+                    "rmse_test": 72.43212427891471,
+                    "end": "2020-03-16 16:24:47.370084"
+                },
+                "lr_ridge": {
+                    "start": "2020-03-16 16:24:47.370084",
+                    "r2_training": 0.6414658359905621,
+                    "rmse_training": 77.15053050783503,
+                    "r2_test": 0.6883942439915405,
+                    "rmse_test": 72.43073987790525,
+                    "end": "2020-03-16 16:35:11.038648"
+                }
+            }
+        }
+    ],
+    "end": "2020-03-16 16:35:11.039645"
+}

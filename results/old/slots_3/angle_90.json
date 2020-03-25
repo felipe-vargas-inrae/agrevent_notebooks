@@ -1,0 +1,80 @@
+{
+    "angle": "90",
+    "start": "2020-03-09 22:03:24.363651",
+    "columns_images": [
+        "plantURI",
+        "dayOfYear",
+        "convex_hull_area",
+        "convex_hull_perimeter",
+        "height",
+        "height_over_pot",
+        "height_under_pot",
+        "number_of_objects",
+        "object_sum_area",
+        "width"
+    ],
+    "slots": {
+        "until": 30,
+        "split": 10
+    },
+    "schema_base": null,
+    "step_wise_naive": "{'3_avg(object_sum_area)', 'biomass'}=0.7392577038624316\n{'3_avg(width)', 'biomass'}=0.32112664443257927\n{'biomass', '2_avg(height_over_pot)'}=0.30560449133902173\n{'1_avg(object_sum_area)', 'biomass'}=0.2434919217113862\n{'2_avg(convex_hull_area)', 'biomass'}=0.20801458335455608",
+    "sceneries": [
+        {
+            "scenery": [
+                "3_avg(object_sum_area)",
+                "3_avg(width)",
+                "2_avg(height_over_pot)",
+                "1_avg(object_sum_area)",
+                "2_avg(convex_hull_area)",
+                "label"
+            ],
+            "models_info": {
+                "rf": {
+                    "start": "2020-03-09 23:39:59.958235",
+                    "end": "2020-03-09 23:45:28.747904",
+                    "model": "rf",
+                    "r2": "[0.5539042106273397, 0.5584907544568657, 0.5579206348579975]",
+                    "importance_list": []
+                },
+                "lr": {
+                    "start": "2020-03-09 23:45:28.747904",
+                    "end": "2020-03-09 23:47:27.573478",
+                    "model": "lr",
+                    "r2": "[0.5916909951032493, 0.5916977449163091]",
+                    "rmse": 81.99868602841696,
+                    "r2_summary": 0.5984620424516598
+                }
+            }
+        },
+        {
+            "scenery": [
+                "3_avg(object_sum_area)",
+                "3_avg(width)",
+                "2_avg(height_over_pot)",
+                "1_avg(object_sum_area)",
+                "2_avg(convex_hull_area)",
+                "first(Treatment)",
+                "label"
+            ],
+            "models_info": {
+                "rf": {
+                    "start": "2020-03-09 23:47:27.590837",
+                    "end": "2020-03-09 23:54:53.340207",
+                    "model": "rf",
+                    "r2": "[0.5538122154238687, 0.5634526246152702, 0.5655708592637678]",
+                    "importance_list": []
+                },
+                "lr": {
+                    "start": "2020-03-09 23:54:53.340207",
+                    "end": "2020-03-09 23:56:11.452434",
+                    "model": "lr",
+                    "r2": "[0.5994085912978482, 0.5994286284595001]",
+                    "rmse": 81.16178951835599,
+                    "r2_summary": 0.6066165837868065
+                }
+            }
+        }
+    ],
+    "end": "2020-03-09 23:56:11.453396"
+}

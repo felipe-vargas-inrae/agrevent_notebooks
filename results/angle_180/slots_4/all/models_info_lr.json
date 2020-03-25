@@ -1,0 +1,80 @@
+{
+    "angle": "180",
+    "columns_images": [
+        "plantURI",
+        "dayOfYear",
+        "convex_hull_area",
+        "convex_hull_perimeter",
+        "height",
+        "height_over_pot",
+        "height_under_pot",
+        "number_of_objects",
+        "object_sum_area",
+        "width"
+    ],
+    "end": "2020-03-25 15:30:34.741027",
+    "folder": "results/angle_180/slots_4/all",
+    "sceneries": [
+        {
+            "models_info": {
+                "baseline": {
+                    "end": "2020-03-25 15:15:17.277423",
+                    "r2_test": -0.0034717436499953624,
+                    "r2_training": 1.1102230246251565e-16,
+                    "rmse_test": 106.50505094589116,
+                    "rmse_training": 114.03428023053917,
+                    "start": "2020-03-25 15:14:51.347678"
+                },
+                "lr": {
+                    "end": "2020-03-25 15:17:57.454801",
+                    "r2_test": 0.5052457752961808,
+                    "r2_training": 0.5686421480558906,
+                    "rmse_test": 74.78463634920985,
+                    "rmse_training": 74.89525083338718,
+                    "start": "2020-03-25 15:15:17.277423"
+                },
+                "lr_ridge": {
+                    "end": "2020-03-25 15:22:31.485338",
+                    "r2_test": 0.5060340369448268,
+                    "r2_training": 0.5682228475250899,
+                    "rmse_test": 74.72503770727525,
+                    "rmse_training": 74.93164288066095,
+                    "start": "2020-03-25 15:17:57.454801"
+                },
+                "rf": {
+                    "end": "2020-03-25 15:30:34.740030",
+                    "r2_test": 0.4939461820026776,
+                    "r2_training": 0.7193682538867945,
+                    "rmse_test": 75.6338109036094,
+                    "rmse_training": 60.40930300743878,
+                    "start": "2020-03-25 15:22:31.485338"
+                }
+            },
+            "scenery": [
+                "1_avg(convex_hull_area)",
+                "1_avg(object_sum_area)",
+                "1_avg(width)",
+                "1_avg(height_over_pot)",
+                "2_avg(convex_hull_area)",
+                "2_avg(object_sum_area)",
+                "2_avg(width)",
+                "2_avg(height_over_pot)",
+                "3_avg(convex_hull_area)",
+                "3_avg(object_sum_area)",
+                "3_avg(width)",
+                "3_avg(height_over_pot)",
+                "4_avg(convex_hull_area)",
+                "4_avg(object_sum_area)",
+                "4_avg(width)",
+                "4_avg(height_over_pot)",
+                "Treatment",
+                "label"
+            ]
+        }
+    ],
+    "slots": {
+        "split": 8,
+        "until": 30
+    },
+    "start": "2020-03-25 15:14:31.651930"
+}

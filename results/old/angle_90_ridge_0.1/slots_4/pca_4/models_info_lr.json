@@ -1,0 +1,82 @@
+{
+    "angle": "90",
+    "folder": "results/angle_90/slots_4/pca_4",
+    "start": "2020-03-18 23:17:34.352048",
+    "columns_images": [
+        "plantURI",
+        "dayOfYear",
+        "convex_hull_area",
+        "convex_hull_perimeter",
+        "height",
+        "height_over_pot",
+        "height_under_pot",
+        "number_of_objects",
+        "object_sum_area",
+        "width"
+    ],
+    "slots": {
+        "until": 30,
+        "split": 8
+    },
+    "step_wise_naive": "{'biomass', '4_avg(object_sum_area)'}=0.7135707604073822\n{'biomass', '4_avg(width)'}=0.3099766672265561\n{'biomass', '2_avg(height_over_pot)'}=0.2844337920724318\n{'biomass', '1_avg(object_sum_area)'}=0.2521541751882278\n{'2_avg(convex_hull_area)', 'biomass'}=0.1750861668597869",
+    "sceneries": [
+        {
+            "scenery": [
+                "1_avg(convex_hull_area)",
+                "1_avg(object_sum_area)",
+                "1_avg(width)",
+                "1_avg(height_over_pot)",
+                "2_avg(convex_hull_area)",
+                "2_avg(object_sum_area)",
+                "2_avg(width)",
+                "2_avg(height_over_pot)",
+                "3_avg(convex_hull_area)",
+                "3_avg(object_sum_area)",
+                "3_avg(width)",
+                "3_avg(height_over_pot)",
+                "4_avg(convex_hull_area)",
+                "4_avg(object_sum_area)",
+                "4_avg(width)",
+                "4_avg(height_over_pot)",
+                "Treatment",
+                "label",
+                "label_log"
+            ],
+            "models_info": {
+                "baseline": {
+                    "start": "2020-03-18 23:22:47.012234",
+                    "r2_training": 0.0,
+                    "rmse_training": 111.76232967422808,
+                    "r2_test": -0.014133109478708938,
+                    "rmse_test": 115.51355784656015,
+                    "end": "2020-03-18 23:23:10.552909"
+                },
+                "lr": {
+                    "start": "2020-03-18 23:23:10.552909",
+                    "r2_training": 0.5274448009947759,
+                    "rmse_training": 76.82838761591387,
+                    "r2_test": 0.54203202617976,
+                    "rmse_test": 77.6252539058071,
+                    "end": "2020-03-18 23:23:45.227286"
+                },
+                "lr_ridge": {
+                    "start": "2020-03-18 23:23:45.227286",
+                    "r2_training": 0.5274443790201093,
+                    "rmse_training": 76.8284219183891,
+                    "r2_test": 0.5419585573913027,
+                    "rmse_test": 77.6314801104518,
+                    "end": "2020-03-18 23:24:45.748684"
+                },
+                "rf": {
+                    "end": "2020-03-18 23:32:14.210004",
+                    "r2_test": 0.5053147301262251,
+                    "r2_training": 0.6557942702044551,
+                    "rmse_test": 80.67704242957508,
+                    "rmse_training": 65.56989584001653,
+                    "start": "2020-03-18 23:24:45.805531"
+                }
+            }
+        }
+    ],
+    "end": "2020-03-18 23:32:14.211002"
+}
